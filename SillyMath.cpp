@@ -23,7 +23,7 @@ int main() { // Starting the main function
   int rightNum = 4;
   string userYN = "?";
  
- //*********************************************************************
+//*********************************************************************
 
 // Set of cout statements to display the Silly Math ASCII art and welcome banner   
   cout << "*******************************************" << endl;
