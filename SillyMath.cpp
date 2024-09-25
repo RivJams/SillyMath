@@ -1,8 +1,10 @@
 /**********************************************************************
-Program: MathTutorV1
-Programmer: RivJams
+Course Section: 1 - 9:00am
+Program: SillyMath
+Version: 2
+Programmers: River Wallerstedt and Anneliese Kleinschmit
 Creation Date: 8/26/2024
-replit URL: https://replit.com/@RivJams/MathTutorV1-River
+GitHub URL: https://github.com/RivJams/SillyMath
 Description: This program is a fun and easy-to-use math tutor for elementary students. 
 **********************************************************************/
 
