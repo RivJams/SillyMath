@@ -14,11 +14,16 @@ using namespace std; // sets standard namespace
  
 int main() { // Starting the main function
 
+//*********************************************************************
+ 
+// Variable list 
   string userName = "unknown"; // Declaring and initializing variables 
   int userAnswer = 0;
   int leftNum = 3;
   int rightNum = 4;
   string userYN = "?";
+ 
+ //*********************************************************************
 
 // Set of cout statements to display the Silly Math ASCII art and welcome banner   
   cout << "*******************************************" << endl;
