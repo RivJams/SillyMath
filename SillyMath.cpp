@@ -56,6 +56,12 @@ srand(time(0)); // unique seed so its random
 
     case 2:
       mSymbol = '-';
+    if (leftNum < rightNum)) {
+      temp = leftNum;
+      leftNum = rightNum;
+      rightNum = temp;
+    }
+      correctAnswer = leftNum - rightNum;
     break;
 
     case 3:
@@ -65,20 +71,16 @@ srand(time(0)); // unique seed so its random
 
     case 4:
       mSymbol = '/';
+
     break;
 
     default:
       cout << "Invalid question type: " << mType << endl;
+      cout << "Contact RivJams or AnnelieseKleinschmit about the error" << endl;
+      return -1;
     break;
   }
 
-  if (mSymbol == '-' && (leftNum < rightNum)) {
-    temp = leftNum;
-    leftNum = rightNum;
-    rightNum = temp;
-    correctAnswer = leftNum - rightNum;
-  }
-  else if (mSymbol == '-' && (leftNum > rightNum))
 
 
 
