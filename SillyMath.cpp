@@ -9,6 +9,8 @@ Description: This program is a fun and easy-to-use math tutor for elementary stu
 **********************************************************************/
 
 #include <iostream> // required for couts & cins 
+#include <cstdlib> // allows for randomizer
+#include <ctime> // enables use of time function
 
 using namespace std; // sets standard namespace 
  
@@ -17,14 +19,18 @@ int main() { // Starting the main function
 //*********************************************************************
  
 // Variable list 
-  string userName = "unknown"; // Declaring and initializing variables 
-  int userAnswer = 0;
+  string userName = "unknown"; // Declaring and initializing variables
   int leftNum = 3;
   int rightNum = 4;
+  int mType = 0;
+  char mSymbol = "?";
+  int correctAnswer = 0;
+  int userAnswer = 0;
+  int temp = 0;
   string userYN = "?";
  
 //*********************************************************************
-
+srand(time(o)); // unique seed so its random
 /* //Temporary omission of code
 // Set of cout statements to display the Silly Math ASCII art and welcome banner   
   cout << "*******************************************" << endl;
