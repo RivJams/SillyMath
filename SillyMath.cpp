@@ -35,7 +35,7 @@ srand(time(0)); // unique seed so its random
 
 // Beginning the interactive portion of the program
   cout << "Please enter your name to begin: ";
-  cin >> userName; // Get user input for name 
+  getline(cin,userName); // Get user input for name
   cout << endl;
   
 // Puts the user's name into the welcome message   
@@ -43,10 +43,9 @@ srand(time(0)); // unique seed so its random
   cout << endl;
 
 
-  leftNum = (rand() % 9) + 1; //randomizes first number
-  rightNum = (rand() % 9) + 1; //randomizes second number
-  mType = (rand() % 3) + 1; //randomizes math symbol
-
+  leftNum = (rand() % 10) + 1; //randomizes first number
+  rightNum = (rand() % 10) + 1; //randomizes second number
+  mType = (rand() % 4) + 1; //randomizes math symbol
 
   switch (mType) { // assigns math symbol
     case 1:
@@ -56,7 +55,7 @@ srand(time(0)); // unique seed so its random
 
     case 2:
       mSymbol = '-';
-    if (leftNum < rightNum)) {
+    if (leftNum < rightNum) {
       temp = leftNum;
       leftNum = rightNum;
       rightNum = temp;
@@ -71,7 +70,8 @@ srand(time(0)); // unique seed so its random
 
     case 4:
       mSymbol = '/';
-
+      correctAnswer = leftNum;
+      leftNum *= rightNum;
     break;
 
     default:
