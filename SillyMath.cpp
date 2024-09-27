@@ -25,6 +25,7 @@ int main() { // Starting the main function
  
 //*********************************************************************
 
+/* //Temporary omission of code
 // Set of cout statements to display the Silly Math ASCII art and welcome banner   
   cout << "*******************************************" << endl;
   cout << " _____ _ _ _      ___  ___      _   _    "   << endl;
@@ -63,6 +64,7 @@ int main() { // Starting the main function
   cout << endl;
   cout << "*******************************************" << endl;
   cout << endl;
+*/
 
 // Beginning the interative portion of the program 
   cout << "Please enter your name to begin: ";
