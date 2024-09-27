@@ -33,7 +33,7 @@ int main() { // Starting the main function
 srand(time(0)); // unique seed so its random
 
 
-// Beginning the interative portion of the program 
+// Beginning the interactive portion of the program
   cout << "Please enter your name to begin: ";
   cin >> userName; // Get user input for name 
   cout << endl;
@@ -43,23 +43,32 @@ srand(time(0)); // unique seed so its random
   cout << endl;
 
 
-  leftNum = rand() % 10; //randomizes first number
-  rightNum = rand() % 10; //randomizes second number
+  leftNum = (rand() % 9) + 1; //randomizes first number
+  rightNum = (rand() % 9) + 1; //randomizes second number
   mType = (rand() % 3) + 1; //randomizes math symbol
 
 
   switch (mType) { // assigns math symbol
     case 1:
       mSymbol = '+';
+      correctAnswer = leftNum + rightNum;
     break;
+
     case 2:
       mSymbol = '-';
     break;
+
     case 3:
       mSymbol = '*';
+      correctAnswer = leftNum * rightNum;
     break;
+
     case 4:
       mSymbol = '/';
+    break;
+
+    default:
+      cout << "Invalid question type: " << mType << endl;
     break;
   }
 
@@ -67,7 +76,9 @@ srand(time(0)); // unique seed so its random
     temp = leftNum;
     leftNum = rightNum;
     rightNum = temp;
-  } else {....}
+    correctAnswer = leftNum - rightNum;
+  }
+  else if (mSymbol == '-' && (leftNum > rightNum))
 
 
 
@@ -76,9 +87,16 @@ srand(time(0)); // unique seed so its random
 
 
   cout << "Can you solve this problem?" << endl;
-  cout << leftNum << " + " << rightNum << " = "; // Displays the math problem 
+  cout << leftNum << " " << mSymbol << " " << rightNum << " = "; // Displays the math problem
   cin >> userAnswer; // Get user input for the answer 
 
+  // Tests to see if user answer is correct
+  if (userAnswer == correctAnswer) {
+    cout << "Correct!" << endl;
+  }
+  else {
+    cout << "Oops!" << endl;
+  }
 
 // End of program. Leave message to user. Couts break up the end message to display better in console.
   cout << endl;
