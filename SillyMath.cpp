@@ -32,9 +32,6 @@ int main() { // Starting the main function
 //*********************************************************************
 srand(time(0)); // unique seed so its random
 
-leftNum = rand() % 10;
-rightNum = rand() % 10;
-mType = (rand() % 3) + 1;
 
 // Beginning the interative portion of the program 
   cout << "Please enter your name to begin: ";
@@ -44,7 +41,40 @@ mType = (rand() % 3) + 1;
 // Puts the user's name into the welcome message   
   cout << "Welcome " << userName << ", to the Silly Math Tutor!" << endl; 
   cout << endl;
-  
+
+
+  leftNum = rand() % 10; //randomizes first number
+  rightNum = rand() % 10; //randomizes second number
+  mType = (rand() % 3) + 1; //randomizes math symbol
+
+
+  switch (mType) { // assigns math symbol
+    case 1:
+      mSymbol = '+';
+    break;
+    case 2:
+      mSymbol = '-';
+    break;
+    case 3:
+      mSymbol = '*';
+    break;
+    case 4:
+      mSymbol = '/';
+    break;
+  }
+
+  if (mSymbol == '-' && (leftNum < rightNum)) {
+    temp = leftNum;
+    leftNum = rightNum;
+    rightNum = temp;
+  } else {....}
+
+
+
+
+
+
+
   cout << "Can you solve this problem?" << endl;
   cout << leftNum << " + " << rightNum << " = "; // Displays the math problem 
   cin >> userAnswer; // Get user input for the answer 
