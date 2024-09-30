@@ -42,7 +42,8 @@ int main() { // Starting the main function
   cout << "            __/ /                       "    << endl;
   cout << "           |___/                       "     << endl;
   cout << "*******************************************" << endl;
-  cout << "*Welcome to Silly Math Tutor V2 by RivJams and AnnelieseKleinschmit*" << endl;
+  cout << "*    Welcome to Silly Math Tutor V2 by    *" << endl;
+  cout << "*    RivJams and Anneliese Kleinschmit    *" << endl;
   cout << "*******************************************" << endl;
   cout << endl;
 
@@ -50,7 +51,7 @@ int main() { // Starting the main function
   cout << "Do you wanna hear some math puns? (y/n): ";
   cin >> userYN;
   cout << endl;
-if (userYN == 'y') {
+if (userYN == 'y') { //response to 'y' as input
   cout << "Great! Here they are:" << endl;
 } else {
   cout << "That's too bad." << endl;
@@ -84,12 +85,12 @@ srand(time(0)); // unique seed so its random
 
   switch (mType) { // assigns math symbol
     case 1:
-      mSymbol = '+';
+      mSymbol = '+'; //assigns an addition problem
       correctAnswer = leftNum + rightNum; // adds the numbers and stores correct answer
     break;
 
     case 2:
-      mSymbol = '-';
+      mSymbol = '-'; //assigns a subtraction problem
     // an if/else is used to make sure there are no negative answers
     if (leftNum < rightNum) {
       temp = leftNum;
@@ -100,12 +101,13 @@ srand(time(0)); // unique seed so its random
     break;
 
     case 3:
-      mSymbol = '*';
+      mSymbol = '*'; //assigns a multiplication problem
       correctAnswer = leftNum * rightNum;
     break;
 
     case 4:
-      mSymbol = '/';
+      mSymbol = '/'; //assigns a division problem
+      //following code makes sure division problem doesn't generate a fraction
       correctAnswer = leftNum;
       leftNum *= rightNum;
     break;
