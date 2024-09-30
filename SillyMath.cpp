@@ -30,8 +30,50 @@ int main() { // Starting the main function
   string userYN = "?";
  
 //*********************************************************************
-srand(time(0)); // unique seed so its random
 
+// Set of cout statements to display the Silly Math ASCII art and welcome banner
+  cout << "*******************************************" << endl;
+  cout << " _____ _ _ _      ___  ___      _   _    "   << endl;
+  cout << "/  ___(_| | |     |  /// |     | | | |   "   << endl;
+  cout << "| `--. _| | |_   _| .  . | __ _| |_| |__ "   << endl;
+  cout << " `--. | | | | | | | |//| |/ _` | __| '_ | "  << endl;
+  cout << " ___/ | | | | |_| | |  | | (_| | |_| | | |"  << endl;
+  cout << "/____/|_|_|_|__, /|_|  |_/,__,_|,__|_| |_|"  << endl;
+  cout << "            __/ /                       "    << endl;
+  cout << "           |___/                       "     << endl;
+  cout << "*******************************************" << endl;
+  cout << "*Welcome to Silly Math Tutor V1 by RivJams*" << endl;
+  cout << "*******************************************" << endl;
+  cout << endl;
+
+// Asks prompt whether to display the jokes or not
+  cout << "Do you wanna hear some math puns? (y/n): ";
+  cin >> userYN;
+  cout << endl;
+// Lol, I don't know how to properly implement this yet. "Currently runs on make believe." Will come back to this with a better system for (y/n) later
+
+// Couts to display jokes. After user input, jokes appear. Maybe add functionality later to reveal answers to jokes after pressing enter
+  cout << "Great! And if you said no, that's too bad," << endl;
+  cout << "you're going to hear them anyway!" << endl;
+  cout << endl;
+  cout << "*******************************************" << endl;
+  cout << endl;
+  cout << "Question: Do you think monsters are good at math?" << endl;
+  cout << "Answer: No, unless you Count Dracula." << endl;
+  cout << endl;
+  cout << "Question: Which knight created the round table?" << endl;
+  cout << "Answer: Sir Cumference." << endl;
+  cout << endl;
+  cout << "Question: What do you call a number who can't stay in place?" << endl;
+  cout << "Answer: A roamin' numeral." << endl;
+  cout << endl;
+  cout << "*******************************************" << endl;
+  cout << endl;
+
+//*********************************************************************
+
+//Portion of code dedicated to random number generation
+srand(time(0)); // unique seed so its random
 
 // Beginning the interactive portion of the program
   cout << "Please enter your name to begin: ";
@@ -81,13 +123,9 @@ srand(time(0)); // unique seed so its random
     break;
   }
 
+//*********************************************************************
 
-
-
-
-
-
-
+  //Asks the math question generated from our random number generator
   cout << "Can you solve this problem?" << endl;
   cout << leftNum << " " << mSymbol << " " << rightNum << " = "; // Displays the math problem
   cin >> userAnswer; // Get user input for the answer 
