@@ -117,6 +117,7 @@ srand(time(0)); // unique seed so its random
 
 // Beginning the interactive portion of the program
   cout << "Please enter your name to begin: ";
+  getline(cin,userName); // Clears out leftover carriage return
   getline(cin,userName); // Get user input for name
   cout << endl;
 
