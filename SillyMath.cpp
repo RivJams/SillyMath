@@ -75,16 +75,6 @@ int main() { // Starting the main function
 //Portion of code dedicated to random number generation
 srand(time(0)); // unique seed so its random
 
-// Beginning the interactive portion of the program
-  cout << "Please enter your name to begin: ";
-  getline(cin,userName); // Get user input for name
-  cout << endl;
-  
-// Puts the user's name into the welcome message   
-  cout << "Welcome " << userName << ", to the Silly Math Tutor!" << endl; 
-  cout << endl;
-
-
   leftNum = (rand() % 10) + 1; //randomizes first number
   rightNum = (rand() % 10) + 1; //randomizes second number
   mType = (rand() % 4) + 1; //randomizes math symbol
@@ -125,12 +115,21 @@ srand(time(0)); // unique seed so its random
 
 //*********************************************************************
 
-  //Asks the math question generated from our random number generator
+// Beginning the interactive portion of the program
+  cout << "Please enter your name to begin: ";
+  getline(cin,userName); // Get user input for name
+  cout << endl;
+
+// Puts the user's name into the welcome message
+  cout << "Welcome " << userName << ", to the Silly Math Tutor!" << endl;
+  cout << endl;
+
+//Asks the math question generated from our random number generator
   cout << "Can you solve this problem?" << endl;
   cout << leftNum << " " << mSymbol << " " << rightNum << " = "; // Displays the math problem
   cin >> userAnswer; // Get user input for the answer 
 
-  // Tests to see if user answer is correct
+// Tests to see if user answer is correct
   if (userAnswer == correctAnswer) {
     cout << "Correct!" << endl;
   }
