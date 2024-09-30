@@ -42,7 +42,7 @@ int main() { // Starting the main function
   cout << "            __/ /                       "    << endl;
   cout << "           |___/                       "     << endl;
   cout << "*******************************************" << endl;
-  cout << "*Welcome to Silly Math Tutor V1 by RivJams*" << endl;
+  cout << "*Welcome to Silly Math Tutor V2 by RivJams and AnnelieseKleinschmit*" << endl;
   cout << "*******************************************" << endl;
   cout << endl;
 
@@ -50,7 +50,12 @@ int main() { // Starting the main function
   cout << "Do you wanna hear some math puns? (y/n): ";
   cin >> userYN;
   cout << endl;
-// Lol, I don't know how to properly implement this yet. "Currently runs on make believe." Will come back to this with a better system for (y/n) later
+if (userYN == "y") {
+  cout << "Great! Here they are:" << endl;
+} else {
+  cout << "That's too bad." << endl;
+  cout << "You're gonna hear them anyway!" << endl;
+  }
 
 // Couts to display jokes. After user input, jokes appear. Maybe add functionality later to reveal answers to jokes after pressing enter
   cout << "Great! And if you said no, that's too bad," << endl;
@@ -82,11 +87,12 @@ srand(time(0)); // unique seed so its random
   switch (mType) { // assigns math symbol
     case 1:
       mSymbol = '+';
-      correctAnswer = leftNum + rightNum;
+      correctAnswer = leftNum + rightNum; // adds the numbers and stores correct answer
     break;
 
     case 2:
       mSymbol = '-';
+    // an if/else is used to make sure there are no negative answers
     if (leftNum < rightNum) {
       temp = leftNum;
       leftNum = rightNum;
@@ -132,16 +138,19 @@ srand(time(0)); // unique seed so its random
 
 // Tests to see if user answer is correct
   if (userAnswer == correctAnswer) {
-    cout << "Correct!" << endl;
+    cout << "Correct! " << endl;
+    cout << "You're a real Math Whizz!" << endl;
   }
   else {
     cout << "Oops!" << endl;
+    cout << "Looks like someone needs to study." << endl;
   }
 
 // End of program. Leave message to user. Couts break up the end message to display better in console.
   cout << endl;
-  cout << "Sorry! That's all the program can do for now," << endl;
-  cout << "but be sure to come back in the near future" << endl;
+  cout << "Thank you, " << userName << "for playing Silly Math Tutor!" << endl;
+  cout << endl;
+  cout << "Be sure to come back in the near future" << endl;
   cout << "for more updates, and most importantly," << endl;
   cout << "MORE FUN!" << endl;
 
