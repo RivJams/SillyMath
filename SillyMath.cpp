@@ -27,7 +27,7 @@ int main() { // Starting the main function
   int correctAnswer = 0;
   int userAnswer = 0;
   int temp = 0;
-  string userYN = "?";
+  char userYN = '?';
  
 //*********************************************************************
 
@@ -50,7 +50,7 @@ int main() { // Starting the main function
   cout << "Do you wanna hear some math puns? (y/n): ";
   cin >> userYN;
   cout << endl;
-if (userYN == "y") {
+if (userYN == 'y') {
   cout << "Great! Here they are:" << endl;
 } else {
   cout << "That's too bad." << endl;
@@ -58,8 +58,6 @@ if (userYN == "y") {
   }
 
 // Couts to display jokes. After user input, jokes appear. Maybe add functionality later to reveal answers to jokes after pressing enter
-  cout << "Great! And if you said no, that's too bad," << endl;
-  cout << "you're going to hear them anyway!" << endl;
   cout << endl;
   cout << "*******************************************" << endl;
   cout << endl;
@@ -148,7 +146,7 @@ srand(time(0)); // unique seed so its random
 
 // End of program. Leave message to user. Couts break up the end message to display better in console.
   cout << endl;
-  cout << "Thank you, " << userName << "for playing Silly Math Tutor!" << endl;
+  cout << "Thank you, " << userName << " for playing Silly Math Tutor!" << endl;
   cout << endl;
   cout << "Be sure to come back in the near future" << endl;
   cout << "for more updates, and most importantly," << endl;
