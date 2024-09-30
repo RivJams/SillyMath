@@ -112,11 +112,10 @@ srand(time(0)); // unique seed so its random
       leftNum *= rightNum;
     break;
 
-    default:
+    default: // This is here to catch any errors
       cout << "Invalid question type: " << mType << endl;
       cout << "Contact RivJams or AnnelieseKleinschmit about the error" << endl;
       return -1;
-    break;
   }
 
 //*********************************************************************
@@ -134,7 +133,8 @@ srand(time(0)); // unique seed so its random
 //Asks the math question generated from our random number generator
   cout << "Can you solve this problem?" << endl;
   cout << leftNum << " " << mSymbol << " " << rightNum << " = "; // Displays the math problem
-  cin >> userAnswer; // Get user input for the answer 
+  cin >> userAnswer; // Get user input for the answer
+  cout << endl; // extra space in between the answer and the confirmation message
 
 // Tests to see if user answer is correct
   if (userAnswer == correctAnswer) {
@@ -143,7 +143,7 @@ srand(time(0)); // unique seed so its random
   }
   else {
     cout << "Oops!" << endl;
-    cout << "Looks like someone needs to study." << endl;
+    cout << "Looks like someone needs to study." << endl; // The AI suggested to put "You're not a real Math Whizz!"
   }
 
 // End of program. Leave message to user. Couts break up the end message to display better in console.
@@ -151,7 +151,7 @@ srand(time(0)); // unique seed so its random
   cout << "Thank you, " << userName << " for playing Silly Math Tutor!" << endl;
   cout << endl;
   cout << "Be sure to come back in the near future" << endl;
-  cout << "for more updates, and most importantly," << endl;
+  cout << "for more updates, and most importantly," << endl; // promises future improvements, the next being Version 3
   cout << "MORE FUN!" << endl;
 
 return 0;
