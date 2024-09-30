@@ -3,7 +3,7 @@ Course Section: 1 - 9:00am
 Program: SillyMath
 Version: 2
 Programmers: River Wallerstedt and Anneliese Kleinschmit
-Creation Date: 8/26/2024
+Creation Date: 9/25/2024
 GitHub URL: https://github.com/RivJams/SillyMath
 Description: This program is a fun and easy-to-use math tutor for elementary students. 
 **********************************************************************/
