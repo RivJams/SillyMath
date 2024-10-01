@@ -144,6 +144,7 @@ srand(time(0)); // unique seed so its random
   else {
     cout << "Oops!" << endl;
     cout << "Looks like someone needs to study." << endl; // The AI suggested to put "You're not a real Math Whizz!"
+    cout << "The correct answer was " << correctAnswer << "." << endl; //gives the user the right anwer
   }
 
 // End of program. Leave message to user. Couts break up the end message to display better in console.
