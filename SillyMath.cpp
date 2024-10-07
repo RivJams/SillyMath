@@ -55,7 +55,6 @@ int main() {
     // Asks prompt whether to display the jokes or not
     cout << "Do you wanna hear some math puns? (y/n): ";
     cin >> userYN;
-    cout << endl;
 
     if (userYN == 'y') {
         //response to 'y' as input
@@ -64,9 +63,9 @@ int main() {
         cout << "That's too bad." << endl;
         cout << "You're gonna hear them anyway!" << endl;
     }
-
-    // Couts to display jokes. After user input, jokes appear. Maybe add functionality later to reveal answers to jokes after pressing enter
     cout << endl;
+
+    // Couts to display jokes. After user input, jokes appear. Maybe add functionality later to reveal answers to jokes after pressing enter.
     cout << "*******************************************" << endl;
     cout << endl;
     cout << "Question: Do you think monsters are good at math?" << endl;
